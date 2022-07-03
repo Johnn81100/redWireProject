@@ -1,0 +1,2 @@
+BB1C1C = couleur du Texte logo
+#F00007 = couleur de fond 
