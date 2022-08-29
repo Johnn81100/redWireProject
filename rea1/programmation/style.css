@@ -1,5 +1,5 @@
 
-reset
+/* reset */
 
 
 html, body, div, span, applet, object, iframe,
@@ -48,6 +48,9 @@ table {
 ///////////////////////////////////////////////////////////////////////////*/  
 
                 /*        Début du css                     */
+                
+
+                /*        Page d'accueil         */
 
 
 html
@@ -58,35 +61,40 @@ html
     min-width: 300px;
 }
 
-body
+#bodyAccueil
 {
     background-color: #C71D26;
     width: 100%;
-    height: 100%;
+    height: auto;
     max-width: 1920px;
     min-width: 800px;
     text-align: center;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 450px 1fr 0.4fr;
-    
+    grid-template-rows: 300px 450px 1fr 250px;
+    border-left: solid 3px black ; 
+    border-right: solid 3px black ; 
 }
+
 .robotoSlab
 {
     font-weight: 500;
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto Slab', serif;
     font-size: 1.6em;
+    color: white;
 }
 .openSans
 {
-    font-family:'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 1em; 
-    color: white; 
+    color: white;
+    line-height: 140%; 
 }
 
 .borderShadow
 {
     box-shadow: 0px 0px 10px  5px white;
+    border: solid 3px black ;
 }
                    /* Header */
 
@@ -95,7 +103,6 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid 3px black ;
     max-width: 1920px;
     min-width: 800px;
     grid-row: 1;   
@@ -136,7 +143,6 @@ header
 {  
     text-decoration: none; 
     color: white;
-    transition: all 0.5s ease-in ;
     padding: 10px;
 
 }
@@ -149,6 +155,7 @@ header
     border: #C71D26 1px solid;
     border-radius: 100%;
     padding: 10px;
+    transition: all 0.5s ease-in ;
     
 }
 
@@ -195,10 +202,8 @@ footer
 {
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows: 0.2fr 0.5fr 0.5fr;
+    grid-template-rows: 150px 0.5fr 0.5fr;
     grid-row: 3; 
-    border-left: solid 3px black ;
-    border-right: solid 3px black ;
 }
 
 
@@ -211,7 +216,7 @@ footer
     grid-row: 1;
     align-self: center;
     text-align: center;
-    margin: 100px auto 100px ;
+    margin: 50px auto 100px ;
 
 }
 
@@ -223,10 +228,8 @@ footer
     text-align: justify;
     margin: 40px 20px;
     padding: 10px;
-    line-height: 140%;
     align-self: center;
     justify-self: center;
-    border: solid 3px black ;
     margin: auto 50px; 
 }
 
@@ -240,7 +243,6 @@ footer
     justify-self: center;
     max-width: 600px;
     min-width: 400px;
-    border: solid 3px black ;
 } 
 
 #presentation h2
@@ -254,7 +256,7 @@ footer
     grid-row: 1;
     align-self: center;
     text-align: center;
-    margin: 10px auto 30px ;
+    margin: 0px auto 30px ;
 }
 
 
@@ -266,7 +268,6 @@ footer
     padding: 10px;
     align-self: center;
     justify-self: center;
-    border: solid 3px black ;
     box-shadow: 0px 0px 10px  5px white;
 }
 
@@ -294,13 +295,6 @@ footer
     height: 100%;  
     object-fit:cover;  
 } 
-
-#border
-{
-    max-width: 1920px;
-    border-left: solid black 3px;
-    border-right: solid black 3px;
-}
 
 #precedent,
 #suivant {
@@ -334,3 +328,158 @@ footer
 {
     color: #C71D26;
 }
+
+
+               /*  PAGE MENU */
+
+#bodyMenu
+{
+    background-color: #C71D26;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    min-width: 800px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 450px 1fr 250px; 
+    border-left: solid black 3px;
+    border-right: solid black 3px;
+
+}
+
+                    /* footer */
+
+#footerMenu
+{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 1920px;
+    min-width: 800px;
+    grid-row: 5;
+}
+
+                    /* Carte Menu */
+
+ h2
+{
+    text-decoration: underline;
+}
+
+h3
+{
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+#containerMenu
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 1fr 1fr 1fr 1fr;  
+    justify-content: center; 
+    align-items: center;  
+}
+
+#containerMenu h2
+{
+    grid-column: 1/span2;
+    grid-row: 1;  
+}
+
+#mardi
+{
+    grid-column: 1;
+    grid-row: 2; 
+}
+
+#mercredi
+{
+    grid-column: 2;
+    grid-row: 2; 
+}
+
+#jeudi
+{
+    grid-column: 1;
+    grid-row: 3; 
+}
+
+#vendredi
+{
+    grid-column: 2;
+    grid-row: 3; 
+}
+
+#samedi
+{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#dimanche
+{
+    grid-column: 2;
+    grid-row: 4; 
+}
+
+.joursMenus
+{
+    margin: 25px;   
+}
+#containerMenu
+{
+    margin:50px 100px;
+}
+
+#containerMenu div:last-child
+{
+    grid-column: 1/span2;
+    grid-row: 5;    
+}
+
+
+#containerMenu a
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+                             /* photos*/
+#picture
+{
+    grid-row: 4;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+                           /* Menu burger responsive */
+
+.burger
+{
+    display: none;
+}
+
+@media screen and (max-width:8000px)
+{
+    #navList
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:100%;
+        /* height:calc(100vh - 350px); */
+        height: calc(100% - 300px);
+        position: absolute;
+        top: 294px;
+        right: -2.5px;
+        background-color: #C71D26;
+        z-index: 1;
+
+    }
+
+}
+

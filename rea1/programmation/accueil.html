@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keyWords" content="Bar restaurant O pti Suisse  situé dans le village de lombers, à proximité d'un chemin de promenade, idéal pour se désaltérer où manger des plats traditionnels">
+    <meta name="description" content="Bar restaurant O pti Suisse  situé dans le village de lombers, à proximité d'un chemin de promenade, idéal pour se désaltérer où manger des plats traditionnels">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <title>Bar restaurant O pti suisse</title>
 </head>
-<body>
+<body id="bodyAccueil">
     <header class="borderShadow">
-        <a href="#Accueil"> <img id="logo" src="../images/logo.jpg" alt="logo O pti Suisse"/></a>
+        <a href="accueil.html"> <img id="logo" src="../images/logo.jpg" alt="logo O pti Suisse"/></a>
         <nav id="navBar" class="robotoSlab">
             <ul id="navList">
-                <li><a href="#Accueil">Accueil</a></li>
-                <li><a href="#Menu">Menu</a></li>
-                <li><a href="#Réservation&Contact">Réservation & Contact</a></li>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Réservation & Contact</a></li>
                 <li><a href="#Blog">Blog</a></li>
             </ul>
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
-    <div id="border">
         <div id="slider" class="borderShadow">
             <img src="../images/imgCarusel01.jpg" alt="image carusel" id="slide"> 
             <div id="precedent" onclick="ChangeSlide(-1)">&lsaquo;</div>
             <div id="suivant" onclick="ChangeSlide(1)">	&rsaquo;</div>
-        </div>
     </div>
     <div id="container">
         <h1 class="robotoSlab">O pti Suisse</h1 >

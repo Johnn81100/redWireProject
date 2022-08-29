@@ -1,4 +1,4 @@
-let  slide = new Array("../images/imgCarusel01.jpg", "../images/imgYvon.jpg")
+let  slide = new Array("../images/imgCarusel01.jpg", "../images/imgYvon.jpg","../images/vuDensemble.jpg" )
 let numero = 0;
 
 function ChangeSlide(sens)
