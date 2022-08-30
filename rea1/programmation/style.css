@@ -58,36 +58,37 @@ html
     height: 100%;
     width: 100%;
     max-width: 1920px;
-    min-width: 300px;
 }
 
 #bodyAccueil
 {
     background-color: #C71D26;
-    width: 100%;
+    width:100%;
     height: auto;
     max-width: 1920px;
-    min-width: 800px;
+    min-width:350px;
     text-align: center;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 300px 450px 1fr 250px;
-    border-left: solid 3px black ; 
-    border-right: solid 3px black ; 
+    border-left: solid 3px black  ; 
+    border-right: solid 3px black ;
+    box-shadow: 0px 0px 10px  5px white;
 }
 
 .robotoSlab
 {
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.6em;
+    font-size: 3.8vh;
     color: white;
 }
 .openSans
 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em; 
+    font-size: 1.9vh; 
     color: white;
+    text-align: justify;
     line-height: 140%; 
 }
 
@@ -103,24 +104,28 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     max-width: 1920px;
-    min-width: 800px;
-    grid-row: 1;   
+    grid-row: 1; 
+    border: solid 3px black ;
+    margin:  0px  0px 0px -3px;
+   
+
 }
 
 #logo/* header div:first-child */
 {
-    width: 13vw;
+    width: 15vw;
     height: auto;
     margin: 50px 20px; 
     max-width: 200px;
-    min-width: 150px;
+    min-width: 100px
 }
     
 
 #navBar
 {
-    width: 80%;
+    width: 100%;
     height: 100%;
 }
 
@@ -136,15 +141,13 @@ header
 #navList li,#footerlist li
 {
     list-style: none;
-
 }
 
 #navList li a, #footerlist li a
 {  
     text-decoration: none; 
     color: white;
-    padding: 10px;
-
+    padding:0px 15px;
 }
 
 
@@ -166,34 +169,43 @@ footer
 {
     display: flex;
     justify-content: space-between;
-    border: solid 3px black ;
     height: 100%;
+    width: 100%;
     max-width: 1920px;
-    min-width: 800px;
     grid-row: 4;
+    margin:  0px  0px 0px -3px;
+    box-shadow:0px -5px 5px  white;
+    border: solid 3px black ;
 }
 
 
 #footerlist
 {
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
-    justify-content:flex-end;
     Align-items:center;
-    font-size: 0.5em;
-    margin: 0px 100px;
+    font-size: 1.4vh;
+    justify-content:flex-end;
 }
+
 #footerlist li:last-child 
 {
     margin-left: 50px;
 }
 
+footer a 
+{
+
+    align-self: center;
+}
+
 #facebook
 {
-    width: 75px;
-    height: 70px;
-    margin: 80px 50px;
+    width: 9.8vh;
+    height: 100%;
+    margin-left: 25px;
+    min-width: 40px;
 }
 
    /* article de présentation */
@@ -202,7 +214,7 @@ footer
 {
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows: 150px 0.5fr 0.5fr;
+    grid-template-rows: 150px 0.5fr 1fr;
     grid-row: 3; 
 }
 
@@ -216,7 +228,7 @@ footer
     grid-row: 1;
     align-self: center;
     text-align: center;
-    margin: 50px auto 100px ;
+    margin: 50px auto 50px ;
 
 }
 
@@ -226,11 +238,10 @@ footer
     grid-row: 2 ;  
     text-indent: 20px; 
     text-align: justify;
-    margin: 40px 20px;
+    margin: 0px 10px 40px 20px;
     padding: 10px;
-    align-self: center;
+    align-self: flex-start;
     justify-self: center;
-    margin: auto 50px; 
 }
 
 #photoPresentation
@@ -239,17 +250,16 @@ footer
     grid-row: 2 ;
     width: 100%;
     height: auto;
-    align-self: center;
+    align-self: flex-start;
     justify-self: center;
     max-width: 600px;
-    min-width: 400px;
 } 
 
 #presentation h2
 {
     font-weight: 500;
     font-family: 'Roboto Slab';
-    font-size: 1.2em; 
+    font-size: 2.8vh; 
     color: white;
     text-decoration: underline;
     grid-column: 2;
@@ -269,6 +279,8 @@ footer
     align-self: center;
     justify-self: center;
     box-shadow: 0px 0px 10px  5px white;
+    border: solid 3px black ;
+
 }
 
 /* carusellllllllllllllllllllllll */
@@ -278,15 +290,14 @@ footer
     position: relative;
     width: 100%;
     height:100%;
-    margin: 100px  auto;
+    margin: 100px  5px;
     display: flex;
     align-self: center;
     justify-self: center;
     grid-row: 2 ;
-    min-width: 400px;
     max-width: 1200px;
     max-height: 350px;
-    border: solid 3px black ;
+
 }
 
 #slider img
@@ -338,7 +349,7 @@ footer
     width: 100%;
     height: auto;
     max-width: 1920px;
-    min-width: 800px;
+    min-width:350px;
     text-align: center;
     display: grid;
     grid-template-columns: 100%;
@@ -356,7 +367,6 @@ footer
     justify-content: space-between;
     height: 100%;
     max-width: 1920px;
-    min-width: 800px;
     grid-row: 5;
 }
 
@@ -463,22 +473,156 @@ h3
     display: none;
 }
 
-@media screen and (max-width:8000px)
+@media screen and ( max-width:850px)
 {
+  
+     
     #navList
     {
         display:flex;
         flex-direction: column;
         align-items: flex-start;
-        width:100%;
-        /* height:calc(100vh - 350px); */
-        height: calc(100% - 300px);
+        justify-content:space-around;
+        width:0%;
+        height: calc(100vh - 320px);
         position: absolute;
-        top: 294px;
-        right: -2.5px;
-        background-color: #C71D26;
+        top: 315px;
+        right: -6px;
         z-index: 1;
+        background-color: #C71D26;
+        transition: all 0.5s ease-in-out;    
+    }
+   
+    .openNavBar #navList
+    {
+        width: 100%;
+        z-index: 1;
+        border-left: solid 3px black ;
+        border-right: solid 3px black;
+        border-bottom: solid 3px black;
+    }
 
+    #navList li > a
+    {
+        display: block;
+        padding: 20px;
+        font-size: 3.41vh;
+        transition: all 0.5s ease-in-out ;
+
+    }
+
+
+    #navList li > a:hover
+    {
+        padding: 20px;
+        padding-left: 40px;
+        letter-spacing: 3px;
+        background-color: #C71D26;  
+        color: white;
+        border: #C71D26;
+        
+    }
+
+    .burger
+    {
+        display:block;
+        position: relative;
+        padding: 0px;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        background-color: transparent;
+        border:none;
+        align-self: center;
+        margin: 35px;
+    
+    }
+
+    #navBar
+    {
+        display: flex;
+        justify-content: end;
+    
+    }
+
+    .bar
+    {
+          display: block;  
+          width: 45px;
+          height: 4px;
+          background-color: white;
+          border-radius: 4px; 
+          transition: all 0.3s ease-in-out;
+    }
+
+    .openNavBar .bar
+    {
+        width: 0;
+        background-color: transparent;
+    }
+
+    .bar::before, .bar::after
+    {
+       content: "";
+       width: 45px;
+       height: 4px;
+       background-color: white;
+       border-radius: 4px;
+       position: absolute;
+       right: 0;
+       transition: all 0.3s ease-in-out;
+    }
+
+    .bar::before
+    {
+        transform:translateY(-15px);
+    }
+
+    .openNavBar .bar::before
+    {
+        transform: rotate(45deg);
+    }
+
+    .bar::after
+    {
+        transform:translateY(15px);
+    }
+
+    .openNavBar .bar::after
+    {
+        transform: rotate(-45deg);
+    }
+
+    #container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #presentation
+    {
+        margin: 0px 20px 20px 20px ;
+    }
+    .elfsight-app-dcbe74db-7f3d-4ab4-bcc1-da79ae37b8b3
+    {
+        margin: 20px 5px;
+    }
+
+    #photoPresentation
+    {
+        align-self: center;
+        margin: 10px;
+    }
+
+    #footerlist li 
+    {  
+        padding:0px 2.5px;
+        font-size:1.2vh;
+    }
+    #footerlist li:last-child 
+    {
+        margin-left: 0px;
     }
 
 }
