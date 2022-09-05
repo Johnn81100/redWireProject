@@ -80,7 +80,7 @@ html
 {
     font-weight: 400;
     font-family: 'Roboto Slab', serif;
-    font-size: 3.8vh;
+    font-size: 3.3vh;
     color: white;
 }
 .openSans
@@ -202,10 +202,11 @@ footer a
 
 #facebook
 {
-    width: 9.8vh;
-    height: 100%;
+    width: 100%;
+    height: auto;
     margin-left: 25px;
     min-width: 40px;
+    max-width: 70px;
 }
 
    /* article de présentation */
@@ -228,7 +229,7 @@ footer a
     grid-row: 1;
     align-self: center;
     text-align: center;
-    margin: 50px auto 50px ;
+    margin: 100px auto 150px ;
 
 }
 
@@ -238,21 +239,24 @@ footer a
     grid-row: 2 ;  
     text-indent: 20px; 
     text-align: justify;
-    margin: 0px 10px 40px 20px;
+    margin: 0px 30px 40px 20px;
     padding: 10px;
     align-self: flex-start;
     justify-self: center;
+    width: auto;
+    height: auto;
 }
 
 #photoPresentation
 {
     grid-column: 1 ;
     grid-row: 2 ;
-    width: 100%;
+    width: 90%;
     height: auto;
     align-self: flex-start;
     justify-self: center;
     max-width: 600px;
+    margin: 0px 0px 0 15px;
 } 
 
 #presentation h2
@@ -483,7 +487,7 @@ h3
         flex-direction: column;
         align-items: flex-start;
         justify-content:space-around;
-        width:0%;
+        width: 20%;
         height: calc(100vh - 320px);
         position: absolute;
         top: 315px;
@@ -500,15 +504,15 @@ h3
         border-left: solid 3px black ;
         border-right: solid 3px black;
         border-bottom: solid 3px black;
+        visibility: visible;
     }
-
+   
     #navList li > a
     {
         display: block;
         padding: 20px;
-        font-size: 3.41vh;
+        font-size: 3.2vh;
         transition: all 0.5s ease-in-out ;
-
     }
 
 
@@ -600,10 +604,17 @@ h3
         justify-content: center;
         align-items: center;
     }
+    
+    #container h1
+    {
+        margin : 50px  0px 75px 25px;    
+    }
+
     #presentation
     {
         margin: 0px 20px 20px 20px ;
     }
+
     .elfsight-app-dcbe74db-7f3d-4ab4-bcc1-da79ae37b8b3
     {
         margin: 20px 5px;
@@ -612,7 +623,7 @@ h3
     #photoPresentation
     {
         align-self: center;
-        margin: 10px;
+        margin: 20px;
     }
 
     #footerlist li 
@@ -620,6 +631,7 @@ h3
         padding:0px 2.5px;
         font-size:1.2vh;
     }
+
     #footerlist li:last-child 
     {
         margin-left: 0px;
