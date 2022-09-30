@@ -1,0 +1,641 @@
+
+/* reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ /* HTML5 display-role reset for older browsers*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////*/  
+
+                /*        Début du css                     */
+                
+
+                /*        Page d'accueil         */
+
+
+html
+{
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+}
+
+#bodyAccueil
+{
+    background-color: #C71D26;
+    width:100%;
+    height: auto;
+    max-width: 1920px;
+    min-width:350px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 450px 1fr 250px;
+    border-left: solid 3px black  ; 
+    border-right: solid 3px black ;
+    box-shadow: 0px 0px 10px  5px white;
+}
+
+.robotoSlab
+{
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    font-size: 3.3vh;
+    color: white;
+}
+.openSans
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9vh; 
+    color: white;
+    text-align: justify;
+    line-height: 140%; 
+}
+
+.borderShadow
+{
+    box-shadow: 0px 0px 10px  5px white;
+    border: solid 3px black ;
+}
+                   /* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    grid-row: 1; 
+    border: solid 3px black ;
+    margin:  0px  0px 0px -3px;
+   
+
+}
+
+#logo/* header div:first-child */
+{
+    width: 15vw;
+    height: auto;
+    margin: 50px 20px; 
+    max-width: 200px;
+    min-width: 100px
+}
+    
+
+#navBar
+{
+    width: 100%;
+    height: 100%;
+}
+
+#navList 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    Align-items:center;
+}
+
+#navList li,#footerlist li
+{
+    list-style: none;
+}
+
+#navList li a, #footerlist li a
+{  
+    text-decoration: none; 
+    color: white;
+    padding:0px 15px;
+}
+
+
+#navList li a:hover
+{
+    color: #C71D26;
+    background-color: white;
+    border: #C71D26 1px solid;
+    border-radius: 100%;
+    padding: 10px;
+    transition: all 0.5s ease-in ;
+    
+}
+
+
+         /* footer */
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    grid-row: 4;
+    margin:  0px  0px 0px -3px;
+    box-shadow:0px -5px 5px  white;
+    border: solid 3px black ;
+}
+
+
+#footerlist
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    Align-items:center;
+    font-size: 1.4vh;
+    justify-content:flex-end;
+}
+
+#footerlist li:last-child 
+{
+    margin-left: 50px;
+}
+
+footer a 
+{
+
+    align-self: center;
+}
+
+#facebook
+{
+    width: 100%;
+    height: auto;
+    margin-left: 25px;
+    min-width: 40px;
+    max-width: 70px;
+}
+
+   /* article de présentation */
+
+#container
+{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 150px 0.5fr 1fr;
+    grid-row: 3; 
+}
+
+
+#container h1
+{
+    font-size: 2em; 
+    color: white;
+    text-decoration: underline;
+    grid-column: 1/span2;
+    grid-row: 1;
+    align-self: center;
+    text-align: center;
+    margin: 100px auto 150px ;
+
+}
+
+#presentation
+{
+    grid-column: 2 ;
+    grid-row: 2 ;  
+    text-indent: 20px; 
+    text-align: justify;
+    margin: 0px 30px 40px 20px;
+    padding: 10px;
+    align-self: flex-start;
+    justify-self: center;
+    width: auto;
+    height: auto;
+}
+
+#photoPresentation
+{
+    grid-column: 1 ;
+    grid-row: 2 ;
+    width: 90%;
+    height: auto;
+    align-self: flex-start;
+    justify-self: center;
+    max-width: 600px;
+    margin: 0px 0px 0 15px;
+} 
+
+#presentation h2
+{
+    font-weight: 500;
+    font-family: 'Roboto Slab';
+    font-size: 2.8vh; 
+    color: white;
+    text-decoration: underline;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    text-align: center;
+    margin: 0px auto 30px ;
+}
+
+
+.elfsight-app-dcbe74db-7f3d-4ab4-bcc1-da79ae37b8b3
+{
+    grid-column: 1/span 3;
+    grid-row: 3;
+    margin: 100px 50px;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0px 0px 10px  5px white;
+    border: solid 3px black ;
+
+}
+
+/* carusellllllllllllllllllllllll */
+
+#slider 
+{
+    position: relative;
+    width: 100%;
+    height:100%;
+    margin: 100px  5px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    grid-row: 2 ;
+    max-width: 1200px;
+    max-height: 350px;
+
+}
+
+#slider img
+{
+    width: 100%;
+    height: 100%;  
+    object-fit:cover;  
+} 
+
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 100px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    align-self: center;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant
+{
+    opacity: 0.8;
+       
+}
+
+#precedent:hover, #suivant:hover
+{
+    color: #C71D26;
+}
+
+
+               /*  PAGE MENU */
+
+#bodyMenu
+{
+    background-color: #C71D26;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    min-width:350px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 450px 1fr 250px; 
+    border-left: solid black 3px;
+    border-right: solid black 3px;
+
+}
+
+                    /* footer */
+
+#footerMenu
+{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 1920px;
+    grid-row: 5;
+}
+
+                    /* Carte Menu */
+
+ h2
+{
+    text-decoration: underline;
+}
+
+h3
+{
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+#containerMenu
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 1fr 1fr 1fr 1fr;  
+    justify-content: center; 
+    align-items: center;  
+}
+
+#containerMenu h2
+{
+    grid-column: 1/span2;
+    grid-row: 1;  
+}
+
+#mardi
+{
+    grid-column: 1;
+    grid-row: 2; 
+}
+
+#mercredi
+{
+    grid-column: 2;
+    grid-row: 2; 
+}
+
+#jeudi
+{
+    grid-column: 1;
+    grid-row: 3; 
+}
+
+#vendredi
+{
+    grid-column: 2;
+    grid-row: 3; 
+}
+
+#samedi
+{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#dimanche
+{
+    grid-column: 2;
+    grid-row: 4; 
+}
+
+.joursMenus
+{
+    margin: 25px;   
+}
+#containerMenu
+{
+    margin:50px 100px;
+}
+
+#containerMenu div:last-child
+{
+    grid-column: 1/span2;
+    grid-row: 5;    
+}
+
+
+#containerMenu a
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+                             /* photos*/
+#picture
+{
+    grid-row: 4;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+                           /* Menu burger responsive */
+
+.burger
+{
+    display: none;
+}
+
+@media screen and ( max-width:850px)
+{
+  
+     
+    #navList
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:space-around;
+        width: 20%;
+        height: calc(100vh - 320px);
+        position: absolute;
+        top: 315px;
+        right: -6px;
+        z-index: 1;
+        background-color: #C71D26;
+        transition: all 0.5s ease-in-out;    
+    }
+   
+    .openNavBar #navList
+    {
+        width: 100%;
+        z-index: 1;
+        border-left: solid 3px black ;
+        border-right: solid 3px black;
+        border-bottom: solid 3px black;
+        visibility: visible;
+    }
+   
+    #navList li > a
+    {
+        display: block;
+        padding: 20px;
+        font-size: 3.2vh;
+        transition: all 0.5s ease-in-out ;
+    }
+
+
+    #navList li > a:hover
+    {
+        padding: 20px;
+        padding-left: 40px;
+        letter-spacing: 3px;
+        background-color: #C71D26;  
+        color: white;
+        border: #C71D26;
+        
+    }
+
+    .burger
+    {
+        display:block;
+        position: relative;
+        padding: 0px;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        background-color: transparent;
+        border:none;
+        align-self: center;
+        margin: 35px;
+    
+    }
+
+    #navBar
+    {
+        display: flex;
+        justify-content: end;
+    
+    }
+
+    .bar
+    {
+          display: block;  
+          width: 45px;
+          height: 4px;
+          background-color: white;
+          border-radius: 4px; 
+          transition: all 0.3s ease-in-out;
+    }
+
+    .openNavBar .bar
+    {
+        width: 0;
+        background-color: transparent;
+    }
+
+    .bar::before, .bar::after
+    {
+       content: "";
+       width: 45px;
+       height: 4px;
+       background-color: white;
+       border-radius: 4px;
+       position: absolute;
+       right: 0;
+       transition: all 0.3s ease-in-out;
+    }
+
+    .bar::before
+    {
+        transform:translateY(-15px);
+    }
+
+    .openNavBar .bar::before
+    {
+        transform: rotate(45deg);
+    }
+
+    .bar::after
+    {
+        transform:translateY(15px);
+    }
+
+    .openNavBar .bar::after
+    {
+        transform: rotate(-45deg);
+    }
+
+    #container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #container h1
+    {
+        margin : 50px  0px 75px 25px;    
+    }
+
+    #presentation
+    {
+        margin: 0px 20px 20px 20px ;
+    }
+
+    .elfsight-app-dcbe74db-7f3d-4ab4-bcc1-da79ae37b8b3
+    {
+        margin: 20px 5px;
+    }
+
+    #photoPresentation
+    {
+        align-self: center;
+        margin: 20px;
+    }
+
+    #footerlist li 
+    {  
+        padding:0px 2.5px;
+        font-size:1.2vh;
+    }
+
+    #footerlist li:last-child 
+    {
+        margin-left: 0px;
+    }
+
+}
+
